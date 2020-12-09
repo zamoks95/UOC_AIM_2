@@ -1,0 +1,44 @@
+.user {
+  div {
+    display: flex;
+  }
+  &__link{
+    color: $blackgrey;
+    font-weight: $bold;
+    display: flex;
+    align-items: center;
+    padding-right: $spacer;
+  }
+  &__name {
+    color: $blackgrey;
+    font-weight: $bold;
+    display: flex;
+    align-items: center;
+    padding-right: $spacer;
+  }
+  &__signout {
+    color: $blackgrey;
+    font-weight: 700;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    margin-left: $spacer;
+  }
+  &__avatar {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $primary;
+    color: $secondary;
+    font-size: 20px;
+    filter: grayscale(100%);
+    transition: filter ease-in-out 75ms;
+    &:hover {
+      filter: grayscale(0%);
+    }
+  }
+}

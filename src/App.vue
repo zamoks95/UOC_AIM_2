@@ -1,21 +1,21 @@
 <template>
   <div id="app">
-    <app-header />
-    <div class="app-container container-fluid">
-        <SearchResults />
-    </div>
+    <AppHeader />
+    <main class="main">
+      <router-view />
+      <notifications group="auth" position="bottom right"/>
+    </main>
   </div>
 </template>
 
-<script>
-  import AppHeader from '@/components/AppHeader'
-  import SearchResults from '@/views/SearchResults'
 
-  export default {
-    name: 'App',
-    components: {
-      AppHeader, 
-      SearchResults
-    }
-  }
+<script>
+import AppHeader from "@/components/AppHeader";
+
+export default {
+  name: "App",
+  components: {
+    AppHeader,
+  },
+};
 </script>

@@ -1,10 +1,8 @@
-const path = require('path');
-
 module.exports = {
   css: {
     loaderOptions: {
       sass: {
-        prependData: `@import "@/styles/_variables.scss";`
+        additionalData: `@import "@/styles/_variables.scss";`
       }
     }
   }
